@@ -49,7 +49,7 @@ class ElfinderServiceProvider extends ServiceProvider {
 			define('ELFINDER_IMG_PARENT_URL', $this->app['url']->asset('packages/barryvdh/elfinder'));
 		}
 
-        $config = $this->app['config']->get('elfinder.route', []);
+        /*$config = $this->app['config']->get('elfinder.route', []);
         $config['namespace'] = 'Barryvdh\Elfinder';
 
         $router->group($config, function($router)
@@ -62,7 +62,7 @@ class ElfinderServiceProvider extends ServiceProvider {
             $router->get('tinymce4', ['as' => 'elfinder.tinymce4', 'uses' => 'ElfinderController@showTinyMCE4']);
             $router->get('tinymce5', ['as' => 'elfinder.tinymce5', 'uses' => 'ElfinderController@showTinyMCE5']);
             $router->get('ckeditor', ['as' => 'elfinder.ckeditor', 'uses' => 'ElfinderController@showCKeditor4']);
-        });
+        });*/
 	}
 
 	/**
